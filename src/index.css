@@ -1,13 +1,99 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  color: #2C3333;
+  background-color: #CBE4DE;
+}
+.loading{
+  text-align: center;
+  font-size: 2rem;
+  margin: 4rem auto;
+}
+.title{
+  text-align: center;
+  margin: 40px auto;
+  font-size: 1.5rem;
+}
+.jobs{
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.tabs{
+  width: 30%;
+  padding: 0 40px;
+}
+.tabs ul{
+  list-style: none;
+} 
+.tabs ul li button{
+  width: 100%;
+  border: none;
+  text-align: start;
+  font-size: 1.1rem;
+  background-color: transparent;
+  margin: 5px 0;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+.tabs ul li button:hover{
+  background-color: #0E8388;
+  color: #fff;
+}
+.job-container{
+  width: 65%;
+  background-color: #fff;
+  padding: 20px 40px;
+}
+.job-container h1{
+  color: #0E8388;
+  padding: 10px 0;
+}
+.job-container h3 span{
+  padding: 8px 10px;
+  background-color: #CBE4DE;
+  color: #2E4F4F;
+  font-size: 1rem;
+}
+.job-container h3{
+  margin-bottom: 20px;
+}
+.job-container p{
+  color: #9ea5a5;
+  margin-bottom: 10px;
+}
+.job-container ul{
+  list-style: none;
+  width: 70%;
+  margin-left: 40px;
+}
+.job-container ul li{
+  padding-bottom: 10px;
+}
+.job-container ul li p{
+  color: #2C3333;
+}
+.job-container .icon{
+  color: #0E8388;
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+.active{
+  background-color: #0E8388!important;
+  color: #fff;
+}
+@media screen and (max-width:850px) {
+  .jobs{
+    width: 100%;
+    padding-right: 20px;
+  }
+  .tabs{
+    width: 32%;
+  }
 }
